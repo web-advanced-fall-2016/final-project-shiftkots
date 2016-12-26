@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css?family=Ek+Mukta:300,400');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+
+body {
+	background-color: #ffffff;
+	margin: 20px 20px 50px 20px;
+	
+}
+a {
+	color: #FFFFFF;
+}
+
+
+.texts {
+	/*display: inline-block;*/
+	position: absolute;
+	/*background-color: black;*/
+	opacity: 0.9;
+	background-blend-mode: luminosity;
+	/*rgba(255, 0, 0, 0.25);*/
+	background:rgba(0,0,0,.75);
+	width: 80%;
+
+	 /*filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");*/
+ 	-webkit-filter: grayscale(100%);
+  	filter: grayscale(100%);
+  	filter: gray;
+  	-moz-transition: all 0.2s ease-in;
+  	-o-transition: all 0.2s ease-in;
+  	-webkit-transition: all 0.2s ease-in;
+ 	transition: all 0.2s ease-in;
+}
+
+.texts:hover,
+.texts:focus{
+	/*display: inline-block;*/
+	filter: grayscale(0%);
+	/*width:21%; */
+	margin:0; 
+	padding:0;
+}
+
+
+.texts p{
+		 width: 100%;
+}
+
+#submit{
+	/*position: absolute;*/
+	z-index: 3;
+	top:80px;
+	/*right:10px;*/
+	opacity: 0.5;
+	width:80px;
+	height:30px;
+	font-size: 25px;
+	 padding: 23px;
+}
+#container{
+/*	position:absolute;
+	top: 0px;
+	left:0px;*/
+	z-index: -1;
+
+}
+#title{
+
+	z-index: 1;
+	font-size: 50px;
+	color: black;
+	padding-top: 0px;
+	/*padding-left:20px;*/
+	text-align: center;
+	/*font-family: 'Ek Mukta', sans-serif;*/
+	font-family: 'Share Tech Mono', monospace;
+}
